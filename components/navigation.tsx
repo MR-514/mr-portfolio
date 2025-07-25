@@ -3,8 +3,8 @@
 import { useState } from "react"
 import { motion } from "framer-motion"
 import { Button } from "@/components/ui/button"
-import { Moon, Sun, Menu, X } from "lucide-react"
-import { useTheme } from "next-themes"
+import {Menu, X } from "lucide-react"
+// import { useTheme } from "next-themes"
 
 interface NavigationProps {
   onSectionClick: (section: string) => void
@@ -12,9 +12,9 @@ interface NavigationProps {
 
 export function Navigation({ onSectionClick }: NavigationProps) {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
-  const { theme, setTheme } = useTheme()
+  // const { theme, setTheme } = useTheme()
 
-  const navItems = ["About", "Experience", "Projects", "Contact"]
+  const navItems = ["Experience", "Projects", "Contact"]
 
   const handleSectionClick = (section: string) => {
     onSectionClick(section)
@@ -52,9 +52,9 @@ export function Navigation({ onSectionClick }: NavigationProps) {
 
           {/* Mobile Navigation */}
           <div className="md:hidden flex items-center space-x-2">
-            <Button variant="ghost" size="icon" onClick={() => setTheme(theme === "dark" ? "light" : "dark")}>
+            {/* <Button variant="ghost" size="icon" onClick={() => setTheme(theme === "dark" ? "light" : "dark")}>
               {theme === "dark" ? <Sun className="h-5 w-5" /> : <Moon className="h-5 w-5" />}
-            </Button>
+            </Button> */}
             <Button variant="ghost" size="icon" onClick={() => setIsMenuOpen(!isMenuOpen)}>
               {isMenuOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
             </Button>
