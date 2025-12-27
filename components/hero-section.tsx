@@ -75,7 +75,7 @@ export function HeroSection({ onContactClick }: HeroSectionProps) {
             <div className="relative w-full max-w-md mx-auto">
               <div className="aspect-square rounded-full bg-gradient-to-br from-primary/20 to-primary/5 p-8">
                 <Image
-                  src="/self2.jpg"
+                  src="/self2.png"
                   alt="Mohammad Rooh Ullah"
                   fill
                   className="w-full h-full object-cover rounded-full p-5"
