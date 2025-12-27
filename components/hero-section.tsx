@@ -1,13 +1,13 @@
-"use client"
+"use client";
 
-import { motion } from "framer-motion"
-import { Button } from "@/components/ui/button"
-import { Mail, Download, Linkedin, Github } from "lucide-react"
-import { TypewriterText } from "./typewriter-text"
-import Image from "next/image"
+import { motion } from "framer-motion";
+import { Button } from "@/components/ui/button";
+import { Mail, Download, Linkedin, Github } from "lucide-react";
+import { TypewriterText } from "./typewriter-text";
+import Image from "next/image";
 
 interface HeroSectionProps {
-  onContactClick: () => void
+  onContactClick: () => void;
 }
 
 export function HeroSection({ onContactClick }: HeroSectionProps) {
@@ -15,9 +15,14 @@ export function HeroSection({ onContactClick }: HeroSectionProps) {
     <section id="about" className="pt-24 pb-16 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          <motion.div initial={{ opacity: 0, x: -50 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.8 }}>
+          <motion.div
+            initial={{ opacity: 0, x: -50 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8 }}
+          >
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6">
-              Hi, I&apos;m <span className="text-primary">Mohammad Rooh Ullah</span>
+              Hi, I&apos;m{" "}
+              <span className="text-primary">Mohammad Rooh Ullah</span>
             </h1>
 
             <div className="text-2xl sm:text-3xl lg:text-4xl font-semibold mb-8 h-16 flex items-center">
@@ -26,7 +31,8 @@ export function HeroSection({ onContactClick }: HeroSectionProps) {
             </div>
 
             <p className="text-lg text-muted-foreground mb-8 max-w-2xl">
-              I am a web developer dedicated to building robust, AI-powered web applications that empower businesses in the digital age.
+              I am a web developer dedicated to building robust, AI-powered web
+              applications that empower businesses in the digital age.
             </p>
 
             <div className="flex flex-wrap gap-4">
@@ -34,9 +40,14 @@ export function HeroSection({ onContactClick }: HeroSectionProps) {
                 <Mail className="mr-2 h-4 w-4 group-hover:scale-110 transition-transform" />
                 Contact Me
               </Button>
-              <Button variant="outline" size="lg" className="group bg-transparent" asChild>
+              <Button
+                variant="outline"
+                size="lg"
+                className="group bg-transparent"
+                asChild
+              >
                 <a
-                  href="https://drive.google.com/file/d/1zzFXzEvUvq-lIw17YwvWL9AOT9R4k2V3/view?usp=sharing"
+                  href="https://drive.google.com/file/d/1nTJEH4xWpOCc_TUlJRpKLnjVauhk3qpM/view?usp=sharing"
                   download="Mohammad_Rooh_Ullah_Resume.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -48,17 +59,40 @@ export function HeroSection({ onContactClick }: HeroSectionProps) {
             </div>
 
             <div className="flex space-x-4 mt-8">
-              <Button variant="ghost" size="icon" className="hover:scale-110 transition-transform" asChild>
-                <a href="https://www.linkedin.com/in/mohammad-rooh-ullah/" target="_blank" rel="noopener noreferrer">
+              <Button
+                variant="ghost"
+                size="icon"
+                className="hover:scale-110 transition-transform"
+                asChild
+              >
+                <a
+                  href="https://www.linkedin.com/in/mohammad-rooh-ullah/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <Linkedin className="h-5 w-5" />
                 </a>
               </Button>
-              <Button variant="ghost" size="icon" className="hover:scale-110 transition-transform">
-                <a href="https://github.com/MR-514" target="_blank" />
-
-                <Github className="h-5 w-5" />
+              <Button
+                variant="ghost"
+                size="icon"
+                className="hover:scale-110 transition-transform"
+                asChild
+              >
+                <a
+                  href="https://github.com/MR-514/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Github className="h-5 w-5" />
+                </a>
               </Button>
-              <Button variant="ghost" size="icon" className="hover:scale-110 transition-transform" asChild>
+              <Button
+                variant="ghost"
+                size="icon"
+                className="hover:scale-110 transition-transform"
+                asChild
+              >
                 <a href="mailto:mrouhulla@gmail.com">
                   <Mail className="h-5 w-5" />
                 </a>
@@ -84,7 +118,11 @@ export function HeroSection({ onContactClick }: HeroSectionProps) {
               </div>
               <motion.div
                 animate={{ rotate: 360 }}
-                transition={{ duration: 20, repeat: Number.POSITIVE_INFINITY, ease: "linear" }}
+                transition={{
+                  duration: 20,
+                  repeat: Number.POSITIVE_INFINITY,
+                  ease: "linear",
+                }}
                 className="absolute -top-4 -right-4 w-24 h-24 border-4 border-primary/20 rounded-full"
               />
             </div>
@@ -92,5 +130,5 @@ export function HeroSection({ onContactClick }: HeroSectionProps) {
         </div>
       </div>
     </section>
-  )
+  );
 }
