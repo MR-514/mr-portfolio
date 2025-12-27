@@ -25,7 +25,7 @@ export function HeroSection({ onContactClick }: HeroSectionProps) {
               <span className="text-primary">Mohammad Rooh Ullah</span>
             </h1>
 
-            <div className="text-2xl sm:text-3xl lg:text-4xl font-semibold mb-8 h-16 flex items-center">
+            <div className="text-2xl sm:text-3xl lg:text-4xl font-semibold mb-8 min-h-16 flex flex-wrap items-baseline">
               <span className="text-muted-foreground mr-3">I am </span>
               <TypewriterText />
             </div>

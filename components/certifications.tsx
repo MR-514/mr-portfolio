@@ -32,6 +32,12 @@ const certifications = [
         date: "June 2024",
         link: "https://www.linkedin.com/posts/mohammad-rooh-ullah_contentful-certified-professional-exam-activity-7206149922033684481-vSft?utm_source=share&utm_medium=member_desktop&rcm=ACoAADe33gwBkY26f0vWvzdmywetIRGq4cRstkE",
     },
+    {
+        title: "Google Cloud Generative AI Leader",
+        issuer: "Google Cloud",
+        date: "November 22, 2025",
+        link: "https://www.credly.com/badges/ff85128c-f4b6-497d-92c9-ccd4fbb32838/linked_in?t=t67ui7",
+    },
 
 ]
 export default function Certifications() {
