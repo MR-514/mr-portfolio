@@ -47,7 +47,7 @@ export function HeroSection({ onContactClick }: HeroSectionProps) {
                 asChild
               >
                 <a
-                  href="https://drive.google.com/file/d/1nTJEH4xWpOCc_TUlJRpKLnjVauhk3qpM/view?usp=sharing"
+                  href="https://drive.google.com/file/d/1TdQi9pxOi-U8fyRryqq6oZ5QtlyFpeKa/view?usp=sharing"
                   download="Mohammad_Rooh_Ullah_Resume.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
